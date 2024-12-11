@@ -1,4 +1,4 @@
-package com.listly
+package com.listly.app
 
 import android.app.Application
 import com.facebook.react.PackageList

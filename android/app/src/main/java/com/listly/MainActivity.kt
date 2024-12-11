@@ -1,4 +1,4 @@
-package com.listly
+package com.listly.app
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
