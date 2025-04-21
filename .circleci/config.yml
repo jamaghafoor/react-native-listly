@@ -6,7 +6,7 @@ orbs:
 jobs:
   build_and_test_android:
     docker:
-      - image: cimg
+      - image: cimg/base:current
 
     steps:
       - checkout
