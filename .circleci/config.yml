@@ -1,12 +1,10 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@5.1.0
 
 jobs:
   build_and_test_android:
     docker:
-      - image: cimg/base:current
+      - image: cimg/node:18.20.0
 
     steps:
       - checkout
