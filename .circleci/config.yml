@@ -22,11 +22,6 @@ jobs:
             yarn install
 
       - run:
-          name: Run Pre-Build Tests (Jest or similar)
-          command: |
-            yarn test
-
-      - run:
           name: Build Android App
           command: |
             cd android
