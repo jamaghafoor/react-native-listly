@@ -14,8 +14,8 @@ jobs:
           command: |
             sudo apt update
             sudo apt install -y openjdk-17-jdk
-            export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
-            echo 'export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64' >> $BASH_ENV
+            export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk"
+            echo 'export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk' >> $BASH_ENV
             echo 'export PATH=$JAVA_HOME/bin:$PATH' >> $BASH_ENV
             source $BASH_ENV
             java -version
