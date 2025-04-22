@@ -12,6 +12,8 @@ jobs:
       - run:
           name: Configure JAVA_HOME for OpenJDK 11
           command: |
+            sudo apt update
+            sudo apt install -y openjdk-11-jdk
             export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
             echo 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64' >> $BASH_ENV
             echo 'export PATH=$JAVA_HOME/bin:$PATH' >> $BASH_ENV
