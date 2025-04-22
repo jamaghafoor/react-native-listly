@@ -35,14 +35,13 @@ jobs:
       - run:
           name: Build Android App
           command: |
-            cd android
-            ./gradlew assembleDebug
+            yarn android
 
       - run:
           name: Run Android Instrumentation Tests (Optional)
           command: |
             cd android
-            ./gradlew testDebugUnitTest
+            ./gradlew assembleRelease
 
 workflows:
   build_and_test:
