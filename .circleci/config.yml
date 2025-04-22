@@ -10,10 +10,10 @@ jobs:
       - checkout
 
       - run:
-          name: Configure JAVA_HOME and PATH
+          name: Configure JAVA_HOME for OpenJDK 11
           command: |
-            export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
-            echo "export JAVA_HOME=$JAVA_HOME" >> $BASH_ENV
+            export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+            echo 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64' >> $BASH_ENV
             echo 'export PATH=$JAVA_HOME/bin:$PATH' >> $BASH_ENV
             source $BASH_ENV
             java -version
